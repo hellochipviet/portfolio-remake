@@ -1,8 +1,9 @@
 "use client";
 import { PROJECT } from "@/constants/home";
-import { Mail, MoveUpRight } from "lucide-react";
+import { Dribbble, Linkedin, Mail, MoveUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { PiBehanceLogo } from "react-icons/pi";
 
 const Section = ({
   children,
@@ -15,9 +16,9 @@ const Section = ({
     <section
       className={`${
         className ?? ""
-      } px-4 py-16 tracking-tighter min-h-screen flex items-center`}
+      } py-16 tracking-tighter min-h-screen flex items-center`}
     >
-      <div className="flex flex-col gap-12 justify-center w-full max-w-[1440px] mx-auto">
+      <div className="flex flex-col gap-12 justify-center w-full container mx-auto px-4 ">
         {children}
       </div>
     </section>
@@ -49,31 +50,34 @@ export default function Home() {
         </p>
 
         <div className="flex justify-center space-x-4 mt-8">
-          <a
-            href="https://dribbble.com"
+          <Link
+            href="https://dribbble.com/chipvietdesigner"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full border border-black px-4 py-1"
+            className="flex gap-2 items-center rounded-full border border-black px-4 py-1"
           >
+            <Dribbble size={16} />
             Dribbble
-          </a>
-          <a
-            href="https://behance.net"
+          </Link>
+          <Link
+            href="https://www.behance.net/chipviet"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full border border-black px-4 py-1"
+            className="flex gap-2 items-center rounded-full border border-black px-4 py-1"
           >
+            <PiBehanceLogo size={20} />
             Behance
-          </a>
+          </Link>
 
-          <a
-            href="https://instagram.com"
+          <Link
+            href="https://www.linkedin.com/in/pham-xuan-sang/"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full border border-black px-4 py-1"
+            className="flex gap-2 items-center rounded-full border border-black px-4 py-1"
           >
-            Instagram
-          </a>
+            <Linkedin size={16} />
+            Linkedin
+          </Link>
         </div>
       </Section>
       <Section className="bg-[#282828] text-white">
@@ -114,12 +118,12 @@ export default function Home() {
         </div>
       </Section>
       <Section className="py-[152px] w-full sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-[842px] flex flex-col gap-4 w-full mx-auto">
+        <div className="max-w-[842px] flex flex-col gap-6 w-full mx-auto">
           <h3 className="text-2xl font-semibold text-center">Projects</h3>
           <div className="text-[63px] font-bold text-center leading-none">
             Helping brands achieve sustainable results
           </div>
-          <div className="text-[#5F6980] text-xl text-center">
+          <div className="text-[#4b4b4b] text-xl text-center">
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered in some form, by injected humour
           </div>
@@ -135,7 +139,7 @@ export default function Home() {
                 quality={80}
                 className="w-full h-auto"
               />
-              <div className="px-6 mb-6 absolute bottom-0 left-0 w-full ">
+              <div className="p-6 absolute bottom-0 left-0 w-full ">
                 <div className="bg-white rounded-[20px] p-8 flex justify-between items-center">
                   <div className="flex flex-col gap-4">
                     <h4 className="text-3xl font-bold">
@@ -227,7 +231,7 @@ export default function Home() {
               challenge of taking someone's vision and turning it into a
               reality.
             </p>
-            <div className="flex justify-center">
+            <div className="flex justify-center flex-col gap-8 items-center">
               <Link
                 target="_blank"
                 href="mailto:hello.chipviet@gmail.com"
@@ -236,6 +240,7 @@ export default function Home() {
                 <Mail />
                 Send me an email
               </Link>
+              <span className="text-[42px]">hello.chipviet@gmail.com</span>
             </div>
           </div>
         </div>
