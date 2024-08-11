@@ -1,9 +1,10 @@
 "use client";
-import { PROJECT } from "@/constants/home";
+import { PROJECT, TRUSTED_BY } from "@/constants/home";
 import { Dribbble, Linkedin, Mail, MoveUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { PiBehanceLogo } from "react-icons/pi";
+import { RiLinkedinLine } from "react-icons/ri";
 
 const Section = ({
   children,
@@ -30,14 +31,18 @@ export default function Home() {
     <div className="min-h-screen w-full text-black">
       <Section className="bg-[#FFF0E3]">
         <h1 className="text-6xl md:text-[98px] font-bold mb-4 tracking-tighter text-center">
-          Hello{" "}
-          <img
-            src="/images/chipviet.svg"
-            className="inline-block"
-            width={230}
-          />{" "}
-          I'm Sang
-          <br />
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-4 mb-4">
+            <div className="flex gap-4 items-center">
+              <span>Hello </span>{" "}
+              <img
+                src="/images/home/top-icon.svg"
+                width={200}
+                className="md:w-[200px] w-[140px]"
+              />{" "}
+            </div>
+
+            <span>{`I'm Sang`}</span>
+          </div>
           <span className="text-outline">
             Digital designer & Software Engineer
           </span>
@@ -49,7 +54,7 @@ export default function Home() {
           business.
         </p>
 
-        <div className="flex justify-center space-x-4 mt-8">
+        <div className="flex justify-center gap-4 mt-8 flex-wrap">
           <Link
             href="https://dribbble.com/chipvietdesigner"
             target="_blank"
@@ -75,7 +80,7 @@ export default function Home() {
             rel="noopener noreferrer"
             className="flex gap-2 items-center rounded-full border border-black px-4 py-1"
           >
-            <Linkedin size={16} />
+            <RiLinkedinLine size={20} />
             Linkedin
           </Link>
         </div>
@@ -121,11 +126,11 @@ export default function Home() {
         <div className="max-w-[842px] flex flex-col gap-6 w-full mx-auto">
           <h3 className="text-2xl font-semibold text-center">Projects</h3>
           <div className="text-[63px] font-bold text-center leading-none">
-            Helping brands achieve sustainable results
+            Bringing Ideas to Life.
           </div>
           <div className="text-[#4b4b4b] text-xl text-center">
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered in some form, by injected humour
+            Turning your ideas into reality through innovative design and
+            strategic development
           </div>
         </div>
         <div className="grid grid-cols-1 gap-8">
@@ -139,12 +144,22 @@ export default function Home() {
                 quality={80}
                 className="w-full h-auto"
               />
-              <div className="p-6 absolute bottom-0 left-0 w-full ">
-                <div className="bg-white rounded-[20px] p-8 flex justify-between items-center">
-                  <div className="flex flex-col gap-4">
-                    <h4 className="text-3xl font-bold">
-                      {project.projectName}
-                    </h4>
+              <div className="p-6 lg:absolute bottom-0 left-0 w-full">
+                <div className="bg-white rounded-[20px] p-0 lg:p-8 flex justify-between items-center w-full">
+                  <div className="flex flex-col gap-4 w-full">
+                    <div className="flex justify-between">
+                      <h4 className="text-3xl font-bold">
+                        {project.projectName}
+                      </h4>
+                      <Link
+                        target="_blank"
+                        href={project.projectLink}
+                        className="rounded-full border p-2 border-black block lg:hidden"
+                      >
+                        <MoveUpRight size={20} />
+                      </Link>
+                    </div>
+
                     <p className="text-gray-600">{project.description}</p>
                     <div className="flex gap-2">
                       {project.tags.map((tag) => (
@@ -157,7 +172,7 @@ export default function Home() {
                   <Link
                     target="_blank"
                     href={project.projectLink}
-                    className="rounded-full border p-4 border-black"
+                    className="rounded-full border p-4 border-black hidden lg:block"
                   >
                     <MoveUpRight size={24} />
                   </Link>
@@ -174,63 +189,42 @@ export default function Home() {
             All Case Studies <MoveUpRight size={16} />
           </Link>
         </div>
-        <div className="rounded-3xl w-full border border-black flex bg-[#F9FAFB]">
-          <div className="p-16 flex flex-col justify-center flex-1">
-            <span className="font-semibold">Trusted by</span>
-            <p className="text-[31px] font-semibold">
-              Focused to create a thoughtful and unique visual craft for brands{" "}
+        <div className="rounded-3xl w-full border border-black flex flex-col lg:flex-row bg-[#F9FAFB]">
+          <div className="p-8 lg:p-16 flex flex-col justify-center lg:flex-[2]">
+            <span className="font-semibold">Clients</span>
+            <p className="text-[32px] font-semibold leading-tight lg:leading-normal">
+              Our clients are our greatest success stories, each project a
+              testament to the power of collaboration and innovation.
             </p>
           </div>
-          <div className="h-auto w-[1px] bg-black" />
-          <div className="p-16 flex flex-col justify-center flex-[2]">
-            <div className="grid grid-cols-3 justify-center gap-4">
-              <div className="flex justify-center">
-                <Image
-                  src={"/images/home/Koodaa-Logo.png"}
-                  alt="Koodaa"
-                  width={140}
-                  height={140}
-                />
-              </div>
-              <div className="flex justify-center">
-                <Image
-                  src={"/images/home/Koodaa-Logo.png"}
-                  alt="Koodaa"
-                  width={140}
-                  height={140}
-                />
-              </div>
-              <div className="flex justify-center">
-                <Image
-                  src={"/images/home/Koodaa-Logo.png"}
-                  alt="Koodaa"
-                  width={140}
-                  height={140}
-                />
-              </div>
-              <div className="flex justify-center">
-                <Image
-                  src={"/images/home/Koodaa-Logo.png"}
-                  alt="Koodaa"
-                  width={140}
-                  height={140}
-                />
-              </div>
+          <div className="h-auto w-[1px] bg-black hidden lg:block" />
+          <div className="px-8 pb-8 lg:p-16 flex flex-col justify-center lg:flex-[3]">
+            <div className="grid grid-cols-2 lg:grid-cols-3 justify-center gap-8 lg:gap-4">
+              {TRUSTED_BY.map((trusted) => (
+                <Link href={trusted.href} target="_blank">
+                  <Image
+                    src={trusted.image}
+                    alt="Trusted"
+                    width={160}
+                    height={140}
+                  />
+                </Link>
+              ))}
             </div>
           </div>
         </div>
       </Section>
-      <Section className="bg-[#282828] py-[152px]">
+      <Section className="bg-[#282828] py-[152px] sm:px-6 lg:px-8">
         <div className="flex items-center justify-center text-white">
-          <div className="text-center">
-            <h2 className="text-6xl md:text-[98px] font-bold mb-4 tracking-tighter text-center">
+          <div className="text-center flex flex-col gap-8">
+            <span className="text-6xl md:text-[98px] font-bold tracking-tighter text-center">
               Let's talk
-            </h2>
-            <p className="text-xl mb-8">
+            </span>
+            <span className="text-xl">
               Good design can make a real difference in the world. I love the
               challenge of taking someone's vision and turning it into a
               reality.
-            </p>
+            </span>
             <div className="flex justify-center flex-col gap-8 items-center">
               <Link
                 target="_blank"
@@ -240,7 +234,9 @@ export default function Home() {
                 <Mail />
                 Send me an email
               </Link>
-              <span className="text-[42px]">hello.chipviet@gmail.com</span>
+              <span className="text-2xl lg:text-[42px]">
+                hello.chipviet@gmail.com
+              </span>
             </div>
           </div>
         </div>
