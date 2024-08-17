@@ -40,17 +40,41 @@ export const PROJECT = [
 export const TRUSTED_BY = [
   {
     id: 1,
-    image: "/images/home/Koodaa-Logo.svg",
-    href: "https://koodaa.com/",
+    image: "/images/home/Sense/Trustedby/Koodaa-Logo.svg",
   },
   {
     id: 2,
-    image: "/images/home/Altek.svg",
-    href: "https://altek.com.vn/",
+    image: "/images/home/Sense/Trustedby/Altek.svg",
   },
   {
     id: 3,
-    image: "/images/home/Bec.png",
-    href: "https://bectechnologies.net/",
+    image: "/images/home/Sense/Trustedby/BEC_Technology.svg",
+  },
+  {
+    id: 3,
+    image: "/images/home/Sense/Trustedby/Nolimitdata.svg",
+  },
+];
+
+export const SERVICES = [
+  {
+    id: 1,
+    title: "UX/UI Design & Illustration",
+    desc: "We transform ideas into functional designs that solve user problems, align with business goals, and deliver seamless experiences across all platforms.",
+  },
+  {
+    id: 2,
+    title: "Website Development",
+    desc: "We’re experts at building solid, reliable, and fast web applications from the ground up. We’re industry agnostic.",
+  },
+  {
+    id: 3,
+    title: "Mobile Development",
+    desc: "We create beautiful native mobile apps that are easy to use and designed to give your users the best experience possible.",
+  },
+  {
+    id: 4,
+    title: "Back-end Development",
+    desc: "With a team of Java developers with over 7 years of experience, we believe we can solve the challenges your business is facing.",
   },
 ];
