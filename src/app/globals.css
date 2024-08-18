@@ -68,7 +68,6 @@
   }
 }
 .meet-sense-wrapper {
-  background: url("/images/home/Sense/Background.svg") no-repeat center center
-    fixed;
+  background: url("/images/home/Sense/Background.svg") no-repeat center center;
   background-size: cover;
 }

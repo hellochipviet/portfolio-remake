@@ -1,39 +1,17 @@
 "use client";
+import { ChildSection, Section } from "@/components/layout/Section";
 import { Button } from "@/components/ui/button";
-import { PROJECT, SERVICES, TRUSTED_BY } from "@/constants/home";
-import { Mail, MoveUpRight } from "lucide-react";
+import { SERVICES, TRUSTED_BY } from "@/constants/home";
 import Image from "next/image";
-import Link from "next/link";
-
-const Section = ({
-  children,
-  className,
-}: {
-  children: React.ReactNode;
-  className?: string;
-}) => {
-  return <section className={className}>{children}</section>;
-};
-
-const ChildSection = ({
-  children,
-  className,
-}: {
-  children: React.ReactNode;
-  className?: string;
-}) => {
-  return (
-    <div
-      className={`container mx-auto border-l border-r border-gray-200 py-24 ${
-        className ? className : ""
-      }`}
-    >
-      {children}
-    </div>
-  );
-};
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
+
+  const scrollDown = () => {
+    const service = document.getElementById("#service");
+    service?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className="min-h-screen w-full text-black">
       <Section className="min-h-screen">
@@ -60,8 +38,9 @@ export default function Home() {
               />
 
               <div className="space-x-4">
-                <Button>Contact Us</Button>
-                <Button variant="outline">Tell Me More</Button>
+                <Button variant="outline" onClick={scrollDown}>
+                  Tell Me More
+                </Button>
               </div>
             </div>
           </div>
@@ -71,7 +50,7 @@ export default function Home() {
         <ChildSection>
           <div className="flex flex-col lg:flex-row items-center justify-center gap-12 w-full mx-auto">
             <h2 className="text-base font-semibold">Trusted by</h2>
-            <div className="flex justify-center items-center gap-4 lg:gap-16">
+            <div className="flex flex-wrap justify-center items-center gap-8 lg:gap-16">
               {TRUSTED_BY.map((trusted) => (
                 <Image
                   src={trusted.image}
@@ -84,7 +63,7 @@ export default function Home() {
           </div>
         </ChildSection>
       </Section>
-      <Section>
+      <Section id="#service">
         <ChildSection className="flex flex-col gap-16">
           <div className="max-w-[842px] flex flex-col gap-2 w-full mx-auto">
             <h3 className="text-[52px] font-semibold text-center">
@@ -104,12 +83,18 @@ export default function Home() {
                 <span className="text-[18px] font-semibold">
                   {service.title}
                 </span>
-                <p className="text-gray-500">{service.desc}</p>
+                <p className="text-[#808080]">{service.desc}</p>
               </div>
             ))}
           </div>
           <div className="text-center">
-            <Button>Check Our Skills</Button>
+            <Button
+              onClick={() => {
+                router.push("/products");
+              }}
+            >
+              Check Our Skills
+            </Button>
           </div>
         </ChildSection>
       </Section>
@@ -126,7 +111,12 @@ export default function Home() {
                 together.
               </div>
               <div className="flex justify-center flex-col gap-8 items-center">
-                <Button className="flex px-6 py-3 border border-gray-500 bg-gray-900">
+                <Button
+                  onClick={() => {
+                    router.push("/contact");
+                  }}
+                  className="flex px-6 py-3 border border-gray-500 bg-[#262626] hover:bg-black"
+                >
                   Meet Sense
                 </Button>
               </div>

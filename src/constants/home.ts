@@ -78,3 +78,21 @@ export const SERVICES = [
     desc: "With a team of Java developers with over 7 years of experience, we believe we can solve the challenges your business is facing.",
   },
 ];
+export const navItems = [
+  {
+    name: "Home",
+    href: "/",
+  },
+  {
+    name: "Products",
+    href: "/products",
+  },
+  // {
+  //   name: "Handbooks",
+  //   href: "/handbooks",
+  // },
+  {
+    name: "About",
+    href: "/about",
+  },
+];

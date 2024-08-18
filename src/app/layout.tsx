@@ -21,9 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <AOSInit />
-        <div className="flex flex-col">
+        <div className="flex flex-col min-h-screen">
           <Header />
-          <main className="min-h-screen">{children}</main>
+          <main className="flex-1">{children}</main>
           <Footer />
         </div>
       </body>
