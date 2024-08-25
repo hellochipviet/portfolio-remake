@@ -21,7 +21,7 @@ export default function Home() {
               Hi.
             </h1>
             <p className="max-w-screen-md text-center tracking-normal">
-              At Senses, we bring your ideas to life through innovative design
+              I bring your ideas to life through innovative design
               and strategic development. Specializing in{" "}
               <b>UI/UX design, illustration and product development</b>, our
               goal is to create products that align seamlessly with your
@@ -70,9 +70,9 @@ export default function Home() {
               End-to-end software development.
             </h3>
             <div className="text-base font-regular text-center leading-1.5">
-              We build high-quality software solutions for small and
+              I build high-quality software solutions for small and
               medium-sized companies worldwide, from startups to innovative
-              enterprises. Our services span product ideation, technical
+              enterprises. My services span product ideation, technical
               specifications, UX/UI design, infrastructure management, and web
               and mobile application development.
             </div>
@@ -93,7 +93,7 @@ export default function Home() {
                 router.push("/products");
               }}
             >
-              Check Our Skills
+              Check My Skills
             </Button>
           </div>
         </ChildSection>
@@ -106,9 +106,7 @@ export default function Home() {
                 Let’s build something amazing together!
               </span>
               <div className="max-w-screen-md mx-auto text-lg font-light">
-                Need help bringing your idea to life? Let’s talk. Someone from
-                our product team will jump in and figure out how we can work
-                together.
+                Need help bringing your idea to life? Let’s talk.
               </div>
               <div className="flex justify-center flex-col gap-8 items-center">
                 <Button
@@ -117,7 +115,7 @@ export default function Home() {
                   }}
                   className="flex px-6 py-3 border border-gray-500 bg-[#262626] hover:bg-black"
                 >
-                  Meet Sense
+                  Let's talk
                 </Button>
               </div>
             </div>

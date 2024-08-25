@@ -9,14 +9,14 @@ export default function About() {
         <ChildSection className="flex flex-col gap-16 min-h-screen justify-center">
           <div className="max-w-[842px] flex flex-col gap-2 w-full mx-auto">
             <div className="flex justify-center">
-              <Badge variant="outline">Why Sense.</Badge>
+              <Badge variant="outline">About me</Badge>
             </div>
             <h3 className="text-[52px] font-semibold text-center">
-              We’re a team of product people.
+              Sang Pham (Chip Viet)
             </h3>
             <div className="text-base font-regular text-center leading-1.5">
-              We’re a team of developers, designers, and product owners taking
-              pride in building delightful products.
+            
+            I’m a designer who specializes in UX/UI design, web, mobile design, and front-end developer with +5 years of experience. My goal is to design products that from a match between the needs of a user and the goals of a business. For me, a long-term relationship with a client is important. Therefore, meeting deadlines, quality of work, and the overall result for me in the first place.
             </div>
           </div>
           <div className="flex justify-center">

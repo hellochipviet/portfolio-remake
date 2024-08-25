@@ -17,10 +17,10 @@ export default function Products() {
         <ChildSection className="min-h-screen flex items-center justify-center">
           <div className="flex flex-col gap-8 lg:gap-12 justify-center items-center">
             <h1 className="text-6xl md:text-[128px] font-bold text-center">
-              We did:
+              I did:
             </h1>
             <p className="max-w-screen-md text-center tracking-normal">
-              Over the years we have partnered with amazing innovative companies
+              Over the years I have partnered with amazing innovative companies
               around the world to build ambitious web and mobile applications,
               from one-person startups.
             </p>
@@ -37,8 +37,7 @@ export default function Products() {
               State-of-the-art web applications.
             </h3>
             <div className="text-base font-regular text-center leading-1.5">
-              We’re experts at building solid, reliable, and fast web
-              applications from the ground up. We’re industry agnostic.
+            I specialize in building robust, reliable, and high-performance web applications from scratch, tailored for any industry.
             </div>
           </div>
           <div className="flex justify-center">
@@ -75,9 +74,7 @@ export default function Products() {
               Delightful iOS and Android apps.
             </h3>
             <div className="text-base font-regular text-center leading-1.5">
-              We design and build beautiful native mobile apps for the best user
-              experience. Millions of users around the world are using our
-              mobile applications.
+            I design and build stunning native mobile apps that deliver the best user experience. My mobile applications are used by millions of users worldwide.
             </div>
           </div>
           <div className="flex justify-center">
@@ -113,8 +110,8 @@ export default function Products() {
               Elevate digital experiences
             </h3>
             <div className="text-base font-regular text-center leading-1.5">
-              From simple icons to intricate, detailed designs, we create
-              high-quality illustrations that elevate digital experiences. Our
+              From simple icons to intricate, detailed designs, I create
+              high-quality illustrations that elevate digital experiences. My
               wide range of assets for UI/UX design ensures that every element
               is visually captivating and perfectly aligned with the user
               journey.

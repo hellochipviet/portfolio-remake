@@ -2,8 +2,9 @@ import { navItems } from "@/constants/home";
 import Image from "next/image";
 import Link from "next/link";
 import { FaFacebook } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { RiInstagramFill } from "react-icons/ri";
+import { FaDribbble } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { FaBehance } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -32,19 +33,19 @@ function Footer() {
       </div>
       <div className="container mx-auto text-center border-t border-gray-200">
         <div className="flex py-8 gap-2 justify-center md:justify-start">
-          <a target="_blank" rel="noreferrer" href="https://twitter.com/shadcn">
+          <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/pham-xuan-sang/">
             <div className="border-[#E5E5E5] border flex items-center justify-center whitespace-nowrap rounded-lg text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground py-2 h-8 w-8 px-0">
-              <FaXTwitter size={20} color={"gray"} />
+              <FaLinkedinIn size={20} color={"gray"} />
             </div>
           </a>
-          <a target="_blank" rel="noreferrer" href="https://twitter.com/shadcn">
+          <a target="_blank" rel="noreferrer" href="https://dribbble.com/chipvietdesigner">
             <div className="border-[#E5E5E5] border flex items-center justify-center whitespace-nowrap rounded-lg text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground py-2 h-8 w-8 px-0">
-              <FaFacebook size={20} color={"gray"} />
+              <FaDribbble size={20} color={"gray"} />
             </div>
           </a>{" "}
-          <a target="_blank" rel="noreferrer" href="https://twitter.com/shadcn">
+          <a target="_blank" rel="noreferrer" href="https://www.behance.net/chipviet">
             <div className="border-[#E5E5E5] border flex items-center justify-center whitespace-nowrap rounded-lg text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground py-2 h-8 w-8 px-0">
-              <RiInstagramFill size={20} color={"gray"} />
+              <FaBehance size={20} color={"gray"} />
             </div>
           </a>
         </div>
@@ -53,7 +54,7 @@ function Footer() {
       </div>
       <div className="container mx-auto border-t border-gray-200">
         <div className="text-gray-900 text-sm py-8 flex justify-center md:justify-start">
-          © Sense. 2024. All Rights Reserved
+          ©Chipviet. 2024. All Rights Reserved
         </div>
       </div>
     </footer>

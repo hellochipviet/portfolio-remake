@@ -11,11 +11,11 @@ export default function Contact() {
         <ChildSection className="flex flex-col gap-16 justify-center py-[152px]">
           <div className="max-w-[842px] flex flex-col gap-2 w-full mx-auto">
             <h3 className="text-[52px] font-semibold text-center">
-              Contact Us
+              Contact me
             </h3>
             <div className="text-base font-regular text-center leading-1.5">
-              Got questions or a project in mind? Reach out to us directly using
-              the contact details below. We’d love to hear from you!
+              Got questions or a project in mind? Reach out to me directly using
+              the contact details below. I’d love to hear from you!
             </div>
           </div>
           <div className="flex justify-evenly gap-8 md:gap-20 flex-wrap">

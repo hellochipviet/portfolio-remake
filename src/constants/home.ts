@@ -60,23 +60,23 @@ export const SERVICES = [
   {
     id: 1,
     title: "UX/UI Design & Illustration",
-    desc: "We transform ideas into functional designs that solve user problems, align with business goals, and deliver seamless experiences across all platforms.",
+    desc: "I transform ideas into functional designs that solve user problems, align with business goals, and deliver seamless experiences across all platforms.",
   },
   {
     id: 2,
     title: "Website Development",
-    desc: "We’re experts at building solid, reliable, and fast web applications from the ground up. We’re industry agnostic.",
+    desc: "Building solid, reliable, and fast web applications from the ground up.",
   },
   {
     id: 3,
     title: "Mobile Development",
-    desc: "We create beautiful native mobile apps that are easy to use and designed to give your users the best experience possible.",
+    desc: "I create beautiful native mobile apps that are easy to use and designed to give your users the best experience possible.",
   },
-  {
-    id: 4,
-    title: "Back-end Development",
-    desc: "With a team of Java developers with over 7 years of experience, we believe we can solve the challenges your business is facing.",
-  },
+  // {
+  //   id: 4,
+  //   title: "Back-end Development",
+  //   desc: "With a team of Java developers with over 7 years of experience, we believe we can solve the challenges your business is facing.",
+  // },
 ];
 export const navItems = [
   {
